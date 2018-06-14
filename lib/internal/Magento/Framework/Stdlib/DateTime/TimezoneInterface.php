@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -65,10 +65,9 @@ interface TimezoneInterface
      * @param mixed $date
      * @param string $locale
      * @param bool $useTimezone
-     * @param bool $includeTime
      * @return \DateTime
      */
-    public function date($date = null, $locale = null, $useTimezone = true, $includeTime = true);
+    public function date($date = null, $locale = null, $useTimezone = true);
 
     /**
      * Create \DateTime object with date converted to scope timezone and scope Locale
@@ -126,8 +125,8 @@ interface TimezoneInterface
      * @param string|\DateTimeInterface $date
      * @param int $dateType
      * @param int $timeType
-     * @param null $locale
-     * @param null $timezone
+     * @param string|null $locale
+     * @param string|null $timezone
      * @param string|null $pattern
      * @return string
      */

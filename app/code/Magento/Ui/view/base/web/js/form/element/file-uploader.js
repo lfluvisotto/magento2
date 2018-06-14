@@ -1,5 +1,5 @@
 /**
- * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 define([
@@ -304,7 +304,7 @@ define([
 
             if (allowed.passed) {
                 target.on('fileuploadsend', function (event, postData) {
-                    postData.data.set('param_name', this.paramName);
+                    postData.data.append('param_name', this.paramName);
                     $(event.currentTarget).off('fileuploadsend');
                 }.bind(data));
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 namespace Magento\Webapi\Model\Rest\Swagger;
@@ -39,7 +39,7 @@ class Generator extends AbstractSchemaGenerator
     const UNAUTHORIZED_DESCRIPTION = '401 Unauthorized';
 
     /** Array signifier */
-    const ARRAY_SIGNIFIER = '[]';
+    const ARRAY_SIGNIFIER = '[0]';
 
     /**
      * Swagger factory instance.

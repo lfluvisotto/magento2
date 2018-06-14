@@ -1,5 +1,5 @@
 /**
- * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 define([
@@ -33,6 +33,10 @@ define([
 
         _bindSubmit: function() {
             var self = this;
+            if (this.element.data('catalog-addtocart-initialized')) {
+                return;
+            }
+            this.element.data('catalog-addtocart-initialized', 1);
             this.element.on('submit', function(e) {
                 e.preventDefault();
                 self.submitForm($(this));
