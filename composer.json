@@ -74,6 +74,7 @@
         "magento/zend-cache": "^1.16",
         "magento/zend-db": "^1.16",
         "magento/zend-pdf": "^1.16",
+        "mashape/unirest-php": "^3.0",
         "monolog/monolog": "^2.7",
         "opensearch-project/opensearch-php": "^1.0 || ^2.0, <2.0.1",
         "pelago/emogrifier": "^7.0",
