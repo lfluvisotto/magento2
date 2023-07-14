@@ -35,6 +35,7 @@
         "ext-xsl": "*",
         "ext-zip": "*",
         "lib-libxml": "*",
+        "apimatic/jsonmapper": "^3.1",
         "colinmollenhour/cache-backend-file": "^1.4",
         "colinmollenhour/cache-backend-redis": "^1.14",
         "colinmollenhour/credis": "^1.13",
