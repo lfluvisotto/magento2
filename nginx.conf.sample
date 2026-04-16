@@ -101,7 +101,7 @@ location / {
 }
 
 location /pub/ {
-    location ~ ^/pub/media/(downloadable|customer|import|custom_options|theme_customization/.*\.xml) {
+    location ~ ^/pub/media/(downloadable|customer|customer_address|import|custom_options|theme_customization/.*\.xml) {
         deny all;
     }
     alias $MAGE_ROOT/pub/;
@@ -186,6 +186,10 @@ location /media/ {
 }
 
 location /media/customer/ {
+    deny all;
+}
+
+location /media/customer_address/ {
     deny all;
 }
 
